@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+/* START Header */
+header {
+    padding: 1em;
+    background-color: green;
+}
+/* END Header */
+
+/* START Main */
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.car-container {
+    width: calc(100% / 3);
+    padding: 1.5em;
+}
+
+.car-inner-container {
+    padding: 1.5em;
+    color: white;
+    border: 1px solid white;
+}
+
+.key-title {
+    color: red;
+}
+
+.car-photo {
+    order: -1;
+    width: 100%;
+    height: 25em;
+}
+/* END Main */
+
+/* START Footer */
+footer {
+    padding: 1em;
+    background-color: royalblue;
+}
+/* END Footer */
