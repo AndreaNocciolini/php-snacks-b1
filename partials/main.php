@@ -24,3 +24,29 @@
     }
     ?>
 </main>
+
+<!-- Print with Vue -->
+<!-- <main>
+      <div>
+        <div v-for="car in cards">
+          <img :src="car.photo" />
+          <div style="color: white">
+            <h3>{{car.brand}}</h3>
+            <small>{{car.model}}</small>
+            <small>{{car.fuel}}</small>
+            <small>{{car.year}}</small>
+            <small>{{car.displacement}}</small>
+            <small>{{car.horse_power}}</small>
+            <small>{{car.kilometers}}</small>
+            <small>{{car.color}}</small>
+            <small>{{car.trasmission}}</small>
+            <small>{{car.car_body}}</small>
+            <small>{{car.locality}}</small>
+            <small>{{car.accessories}}</small>
+            <small>{{car.car_porters}}</small>
+            <small>{{car.traction}}</small>
+            <small>{{car.price}}</small>
+          </div>
+        </div>
+      </div>
+    </main> -->
