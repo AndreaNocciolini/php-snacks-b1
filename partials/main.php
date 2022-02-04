@@ -28,7 +28,7 @@
 <!-- Print with Vue -->
 <!-- <main>
       <div>
-        <div v-for="car in cards">
+        <div v-for="car in usedCars">
           <img :src="car.photo" />
           <div style="color: white">
             <h3>{{car.brand}}</h3>
