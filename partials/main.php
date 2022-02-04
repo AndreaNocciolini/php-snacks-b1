@@ -10,10 +10,9 @@
                         } else {
                             echo '<img class="car-photo" src="' . $value . '" />';
                         }
-                    } elseif ($key== 'price') {
+                    } elseif ($key == 'price') {
                         echo '<h4><span class="key-title">' . ucfirst($key) . '</span>: ' . $value . ' &euro;</h4>';
-                    }
-                     else {
+                    } else {
                         echo '<h4><span class="key-title">' . ucfirst($key) . '</span>: ' . $value . '</h4>';
                     }
                 }
@@ -46,6 +45,19 @@
             <small>{{car.car_porters}}</small>
             <small>{{car.traction}}</small>
             <small>{{car.price}}</small>
+          </div>
+        </div>
+      </div>
+    </main>  -->
+
+
+<!-- Print with nested v-for -->
+<!-- <main>
+      <div>
+        <div v-for="car in usedCars">
+          <img :src="car.photo" />
+          <div style="color: white" v-for="key in car">
+            <h3>{{key}}</h3>
           </div>
         </div>
       </div>
