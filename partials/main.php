@@ -1,6 +1,6 @@
 <main class="main-container">
     <?php
-    foreach ($usedCars as $car) { ?>
+    foreach ($usedCarsFiltered as $car) { ?>
         <div class="car-container">
             <div class="car-inner-container" style="max-height: 45em;overflow: auto;">
                 <?php foreach ($car as $key => $value) {

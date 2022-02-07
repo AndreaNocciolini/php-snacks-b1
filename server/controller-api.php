@@ -1,7 +1,18 @@
 <?php
 include __DIR__ . '/db.php';
-header('Content-type: application/json');
+$usedCarsFiltered = $usedCars;
 
-echo json_encode([
-    'results' =>  $usedCars,
-  ]);
+if (isset($_GET['brand']) !== false) {
+    $type = $_GET['brand'];
+    if ($type === 'all') {
+        $usedCarsFiltered = $usedCars;
+    } else {
+        $usedCarsFiltered = [];
+        foreach ($usedCars as $car) {
+            if ($car['brand'] === $type) {
+                $usedCarsFiltered[] = $car;
+            }
+        }
+    }
+}
+?>

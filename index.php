@@ -17,7 +17,7 @@
 <body>
     <!-- Include Database -->
     <?php include __DIR__ . '/server/db.php' ?>
-
+    <?php include __DIR__ . '/server/controller-api.php' ?>
     <div id="app">
         <!-- Include Header -->
         <?php include_once __DIR__ . '/partials/header.php' ?>
@@ -28,7 +28,7 @@
         <!-- Include Footer -->
         <?php include_once __DIR__ . '/partials/footer.php' ?>
     </div>
-    
+
     <!-- Link JS and Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
